@@ -4,7 +4,7 @@ body {
 }
 
 .conteneur {
-    background-color: powderblue;
+    background-color: lightgray;
     color: #444;
     display: flex;
     flex-wrap: wrap;
@@ -25,6 +25,9 @@ body {
     border: 2px solid black;
     width: 100%;
     margin-bottom: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.552),
+                0 0 30px black,
+                0 0 40px black;
     
    
    
@@ -42,6 +45,8 @@ figcaption{
     align-items: flex-end;
     justify-content: space-around;
    flex-wrap: wrap;
+   color: white;
+   font-weight: bold;
    
 }
 
@@ -54,7 +59,7 @@ figcaption{
 }
 
 /*Pour les écrans entre 480px et 800px on affiche les images sur 2 colonne*/
-@media only screen and (min-width:550px) and (max-width:800px){
+@media  screen and (min-width:550px) and (max-width:800px){
     .boite{
         width: calc((100% - 42px)/2);
     }

@@ -1,0 +1,17 @@
+form{
+   display: flex;
+   flex-direction: column;
+   
+}
+
+#lenom,#leprenom,#lemessage,#lalangue {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+#legenre,#lergpd{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
