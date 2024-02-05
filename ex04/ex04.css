@@ -1,0 +1,74 @@
+body {
+    margin: 20px;
+    
+}
+
+.conteneur {
+    background-color: powderblue;
+    color: #444;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.boite {
+    margin: 5px;
+    
+    /*On divise en 3 (nombre de colonne) la largeur totale de la page (100%) en ayant retirer les marges des 3 figures*/
+    width: calc((100% - 42px)/1);
+   
+    
+}
+
+.boite img {
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 100%;
+    margin-bottom: 5px;
+    
+   
+   
+}
+
+.boite figcaption {
+    padding: 0 5px;
+    text-align:center;
+    
+  
+    
+}
+figcaption{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+   flex-wrap: wrap;
+   
+}
+
+/*Pour les écrans de max 480px, on affiche les images sur 1 colonne*/
+@media  screen and (max-width:510px) {
+    .boite{
+        width: calc((100% - 42px)/1);
+    }
+    
+}
+
+/*Pour les écrans entre 480px et 800px on affiche les images sur 2 colonne*/
+@media only screen and (min-width:550px) and (max-width:800px){
+    .boite{
+        width: calc((100% - 42px)/2);
+    }
+}
+
+/*Pour les écrans entre 800px et 1024px on affiche les images sur 3 colonne*/
+@media only screen and (min-width:800px) and (max-width:1024px){
+    .boite{
+        width: calc((100% - 42px)/3);
+    }
+}
+/*+ de1024px, 4colonnes*/
+@media only screen and (min-width:1024px){
+    .boite{
+        width: calc((100% - 42px)/4);
+    }
+}
