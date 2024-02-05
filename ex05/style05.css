@@ -10,6 +10,9 @@ form{
     margin-bottom: 1em;
 }
 
+#legenre>label { /*Cible le premier label uniquement(premier enfant)*/
+    margin-right: 2em;
+}
 #legenre,#lergpd{
     display: flex;
     flex-direction: row;
