@@ -14,7 +14,6 @@ body {
     
 }
 
-
 #formContainer{
    display: flex;
    flex-direction: column;
@@ -43,6 +42,7 @@ input{
     background-color: #5D536B;
     color: #fff;
     border-radius: 5px;
+    border: none;
     
 }
 input[type=radio]{
@@ -69,10 +69,20 @@ label{
 textarea,select{
     background-color: #5D536B;
     color: #fff;
+    border: none;
 }
 
 
 @media screen and (min-width:640px) and (max-width:1200px) {
+    body{
+        background-color: #30362F;
+    }
+    #formContainer{
+        border: 3px solid transparent;
+        box-shadow: 0 0 50px #625834,
+                0 0 70px #625834;
+        
+    }
     #lenom,#leprenom,#lemessage,#lalangue{
         display: flex;
         flex-direction: row;
@@ -81,22 +91,35 @@ textarea,select{
     input{
         margin: 0 0 10px 10px;
         padding: 2px;
+        background-color: #625834;
+        border: none;
     }
     textarea,select{
         margin-left: 10px;
+        background-color: #625834;
+        border: none;
     }
 }
 
 @media screen and (min-width:1200px){
+    body{
+        background-color: #0A0908;
+    }
    #formContainer{
     display: table-column;
     column-count: 2;
     column-gap: 50px;
-    column-rule:  2px solid white;
-    
-    
+    column-rule:  2px solid #ffffff90;
+    border: 3px solid transparent;
+    box-shadow: 0 0 50px #49111C,
+            0 0 70px #49111C;
     
    }
+   input{
+    background-color: #49111C;
+    border: none;
+   }
+   
  #lemessage{
     margin-top:5em;
     display: flex;
@@ -104,6 +127,12 @@ textarea,select{
  }
  textarea{
     height: 100px;
+    background-color: #49111C;
+    border: none;
+ }
+ select{
+    background-color: #49111C;
+    border: none;
  }
  #lalangue{
    display: flex;
