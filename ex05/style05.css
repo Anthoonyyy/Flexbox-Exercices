@@ -70,3 +70,54 @@ textarea,select{
     background-color: #5D536B;
     color: #fff;
 }
+
+
+@media screen and (min-width:640px) and (max-width:1200px) {
+    #lenom,#leprenom,#lemessage,#lalangue{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    input{
+        margin: 0 0 10px 10px;
+        padding: 2px;
+    }
+    textarea,select{
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width:1200px){
+   #formContainer{
+    display: table-column;
+    column-count: 2;
+    column-gap: 50px;
+    column-rule:  2px solid white;
+    
+    
+    
+   }
+ #lemessage{
+    margin-top:5em;
+    display: flex;
+    flex-wrap: nowrap;
+ }
+ textarea{
+    height: 100px;
+ }
+ #lalangue{
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-wrap: nowrap;
+ }
+ #lergpd{
+    margin-top: 40px;
+ }
+ input[type=submit]{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    border-radius: 10px;
+ }
+}
